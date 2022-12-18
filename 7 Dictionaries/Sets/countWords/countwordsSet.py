@@ -1,5 +1,5 @@
 ##
-#  This program counts the number of unique words contained in a text document.
+#  This program counts the number of unique words.txt contained in a text document.
 #
 
 def main() :
@@ -17,7 +17,7 @@ def main() :
          if cleaned != "" :
             uniqueWords.add(cleaned)
 
-   print("The document contains", len(uniqueWords), "words.")
+   print("The document contains", len(uniqueWords), "words.txt.")
    
 ## Cleans a string by making letters lowercase and removing characters 
 #  that are not letters.

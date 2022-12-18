@@ -1,6 +1,6 @@
 ##
-#  This program checks which words in a file are not present in a list of
-#  correctly spelled words.
+#  This program checks which words.txt in a file are not present in a list of
+#  correctly spelled words.txt.
 #
 
 # Import the split function from the regular expression module.
@@ -8,17 +8,17 @@ from re import split
 
 def main() :
    # Read the word list and the document.
-   correctlySpelledWords = readWords("words")
+   correctlySpelledWords = readWords("words.txt")
    documentWords = readWords("alice30.txt")
 
-   # Print all words that are in the document but not the word list.
+   # Print all words.txt that are in the document but not the word list.
    misspellings = documentWords.difference(correctlySpelledWords)
    for word in sorted(misspellings) :
       print(word)
    
-## Reads all words from a file.
+## Reads all words.txt from a file.
 #  @param filename the name of the file
-#  @return a set with all lowercased words in the file. Here, a word is a 
+#  @return a set with all lowercased words.txt in the file. Here, a word is a
 #  sequence of upper- and lowercase letters
 #   
 def readWords(filename) :
