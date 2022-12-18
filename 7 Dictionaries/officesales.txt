@@ -1,0 +1,8 @@
+Michael Scott:8580.0:7201.25:8900.0
+Pam Beesly:10225.25:9025.0:9505.0
+Dwight Schrute:6700.1:5012.45:6011.0
+Erin Hannon:9285.15:8276.1:8705.0
+Oscar Martinez:10000:10000:10000
+Angela Martin:7901.25:4267.0:7056.5
+Jim Halpert:7901.25:4267.0:7056.5
+Stanley Hudson:7901.25:4267.0:7056.4
