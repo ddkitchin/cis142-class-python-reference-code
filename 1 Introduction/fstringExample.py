@@ -15,7 +15,7 @@ for value in range(2, 11, 2):
     
 print(f'\n==centered====')
 for value in range(2, 11, 2):
-    print(f'{value:=2}|{value*value:=4}|{value*value*value:=5}|') 
+    print(f'{value:^10}|{value*value:^10}|{value*value*value:^10}|')
     
 print(f'\n=====left====')
 for value in range(2, 11, 2):
