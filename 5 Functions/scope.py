@@ -11,7 +11,7 @@ def main():
     value = int(input("Enter a side length:"))
     #print("value after input statement before call to cubeVolume",value)
     print(cubeVolume(value))
-    #print(sideLength) #can't access in main... local to cubeVolue). Same situation for result
+    #print(sideLength) #can't access in main... local to cubeVolume). Same situation for result
     
 def cubeVolume(sideLength):
     ''' 1) if no value on line 1 then this will blow up because cubeVolume does
