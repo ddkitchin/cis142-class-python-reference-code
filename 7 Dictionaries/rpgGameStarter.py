@@ -38,8 +38,11 @@ def main():
         #.split() breaks it up into an list array
         #eg typing 'go east' would give the list:
         #['go','east']
-        move = input(">").lower().split()
-    
+
+        move = []
+        while len(move) == 0:
+            move = input(">").lower().split()
+
         #if they type 'go' first
         if move[0] == "go":
             goToRoom(move)
