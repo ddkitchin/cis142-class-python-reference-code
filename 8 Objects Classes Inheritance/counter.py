@@ -4,7 +4,7 @@ class Counter :
    
    ''' When dunder init (__init__) is not specified none of the attributes are set.
    In this example, you would have to call the reset to get the value set to 0
-   def __init__():
+   def __init__(self):
       self._value = 0'''
     
    def getValue(self) :
