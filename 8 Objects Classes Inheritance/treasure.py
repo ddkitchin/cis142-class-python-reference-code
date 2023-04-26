@@ -32,7 +32,7 @@ def main():
         value = int(input("Enter the prize value "))
         playerTreasureChest.append(Treasure(name,value))
         
-    print(playerTreasureChest) # not meaningful unless you implement __str__
+    print(playerTreasureChest) # not meaningful unless you implement __repr__
     for prize in playerTreasureChest:
         print(prize)
         
