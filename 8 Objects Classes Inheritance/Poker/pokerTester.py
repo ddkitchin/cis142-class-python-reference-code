@@ -7,7 +7,6 @@ from pokerHand import PokerHand
 from deck import Deck
 from hand import Hand
 
-
 def findDefiningClass(obj, methodName):
     #   Finds and returns the class object that will provide
     #   the definition of method_name (as a string) if it is
@@ -19,10 +18,10 @@ def findDefiningClass(obj, methodName):
             return ty
     return None
 
-
 def main():
+
     deck = Deck()
-    deck.shuffle()
+    deck.shuffle() # comment this out to test a straight flush
 
     hand = Hand()
     # deal the cards and classify the hands
@@ -31,12 +30,11 @@ def main():
         deck.moveCards(hand, 7)
         hand.sort()
         print(hand)
-        hand.rankHist()
-        hand.suitHist()
+        hand.createRankHistogram()
+        hand.createSuitHistogram()
         if hand.hasFlush():
             print("================Flush")
         else:
             print("================You got to know when to fold em")
-
 
 main()

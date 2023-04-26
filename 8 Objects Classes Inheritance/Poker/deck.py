@@ -11,7 +11,7 @@ from card import Card
 class Deck:
     #    Represents a deck of cards.
     #    Attributes:
-    #     cards: list of Card objects.
+    #    _cards: list of Card objects.
 
     def __init__(self):
         self._cards = []
@@ -25,6 +25,9 @@ class Deck:
         for card in self._cards:
             res.append(str(card))
         return '\n'.join(res)
+
+    def getCards(self):
+        return self._cards
 
     def addCard(self, card):
         self._cards.append(card)

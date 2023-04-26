@@ -9,7 +9,7 @@ from hand import Hand
 
 class PokerHand(Hand):
 
-    def suitHist(self):
+    def createSuitHistogram(self):
         #        Builds a histogram of the suits that appear in the hand.
         #        Stores the result in attribute suits.
 
@@ -17,7 +17,7 @@ class PokerHand(Hand):
         for card in self._cards:
             self._suits[card._suit] = self._suits.get(card._suit, 0) + 1
 
-    def rankHist(self):
+    def createRankHistogram(self):
         #       Builds a histogram of the ranks that appear in the hand.
         #       Stores the result in attribute ranks.
 
