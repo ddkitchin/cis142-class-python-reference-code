@@ -14,27 +14,29 @@ W="WRONG"
 c=Character(NAME,STRENGTH,HEALTH)
 
 # check name
+print(f'getName() test is ',end="")
 if NAME == c.getName():
-    print(c.getName(),R)
+    print(f'{c.getName()} {R}')
 else:
-    print(c.getName(),W)
+    print(f'{c.getName()} {W}')
     
 # check strength
+print(f'getStrength() test is ',end="")
 if STRENGTH == c.getStrength():
-    print(c.getStrength(),R)
+    print(f'{c.getStrength()} {R}')
 else:
-    print(c.getStrength(),W)
+    print(f'{c.getStrength()} {W}')
     
 # check health
+print(f'getHealth() test is ',end="")
 if HEALTH == c.getHealth():
-    print(c.getHealth(),R)
+    print(f'{c.getHealth()} {R}')
 else:
-    print(c.getHealth(),W)
+    print(f'{c.getHealth()} {W}')
     
 # adjust health and show new health
 c.adjustHealth(1)
-print("Health after adjustment of 1",c.getHealth())
+print(f'getHealth() after adjustment of 1 {c.getHealth()}. Verify this is what you programmed.')
 
 # show magic
-print("Magic is set by game designer within the constructor",c.getMagic())
-
+print(f'getMagic() is set by game designer within the constructor {c.getMagic()}. Verify it is set the way you programmed.')
