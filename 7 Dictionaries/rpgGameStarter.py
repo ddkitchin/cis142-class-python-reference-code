@@ -34,10 +34,11 @@ def main():
     
         showStatus()
     
-        #get the player's next 'move'
-        #.split() breaks it up into an list array
-        #eg typing 'go east' would give the list:
-        #['go','east']
+        '''
+        Get the player's next 'move'. 
+        .split() breaks it up into an list array.
+        Typing 'go east' would give the list:
+        ['go','east'] '''
 
         move = []
         while len(move) == 0:
@@ -51,7 +52,7 @@ def main():
         if move[0] == "get" :
             processInventory(move)
             
-        #if they type 'get' first
+        #if they type 'menu' first
         if move[0] == "menu" :
             showInstructions()
 
