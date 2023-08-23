@@ -2,7 +2,7 @@ import math
 
 # This works if your font setting in Wing is LUCINDA SANS TYPEWRITER. Other fonts
 # may work but if the font characters horitzontal footprints are not all the same
-# the alignment will be thrown of by the varying character width.
+# the alignment will be thrown off by the varying character width.
 # @copyright Deborah Kitchin
 
 # simple fstring versus book demo
