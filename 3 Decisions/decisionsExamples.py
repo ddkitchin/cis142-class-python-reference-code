@@ -30,7 +30,7 @@ else:
 # Obtain magnitude
 richter = float(input("Enter a magnitude on the Richter scale: "))
     
-# Print the description
+# same algorithm as below for richter using elif 
 if richter >= 8.0:
     print("Most structures fall")
 elif richter >= 7.0:
@@ -42,6 +42,7 @@ elif richter >= 4.5:
 else: 
     print("No destruction of buildings")
 
+# same algorithm as above just using else if
 if richter >= 8.0:
     print("Most structures fall")
 else:
@@ -55,6 +56,21 @@ else:
                 print("Damage to poorly constructed buildings")
             else: 
                 print("No destruction of buildings")
+
+# different richter algorithm
+if richter >= 6:
+    if richter >= 7:
+        if richter >= 8:
+            print("Most structures fall")
+        else:
+            print("Many buildings destroyed")
+    else:
+        print("Many buildings considerably damaged, some collapse")
+else:
+    if richter >= 4.5:
+        print("Damage to poorly constructed buildings")
+    else: 
+        print("No destruction of buildings")        
 
 ######################################################################
 # 2 Algorithms to determine a grade based on the score.
