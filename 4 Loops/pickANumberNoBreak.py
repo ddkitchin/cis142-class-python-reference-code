@@ -2,7 +2,7 @@ from random import randint
 # Guess the number game. You can play as long as you want
 keepGoing = True
 games = 0  # counts how many games are played
-wins = 0  # counts how many gaems are won
+wins = 0  # counts how many games are won
 while keepGoing:
     games = games + 1
     print("You have 3 tries to guess the number")
@@ -16,7 +16,6 @@ while keepGoing:
     if guess == actualNumber:
             wins = wins + 1
             print("You win!")
-            break
     else:
         print("You lose. The number is ",actualNumber)
     ''' keepGoing is a boolean. I am setting it by asking
