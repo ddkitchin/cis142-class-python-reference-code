@@ -1,3 +1,4 @@
+# @copyright Deborah Kitchin
 # How to convert a string of values to a list.
 
 #1 enter values with space between

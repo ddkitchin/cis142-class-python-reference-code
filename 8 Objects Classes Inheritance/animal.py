@@ -1,3 +1,4 @@
+# @copyright Deborah Kitchin
 class Animal:
 
     def __init__(self, sound="Unknown", food="Unknown", movement="run"):

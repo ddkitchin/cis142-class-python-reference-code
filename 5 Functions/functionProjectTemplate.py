@@ -1,4 +1,3 @@
-#@copyright Deborah
 # @copyright Deborah Kitchin
 def main():
     name = getName()

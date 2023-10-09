@@ -1,3 +1,4 @@
+# @ copyright Deborah Kitchin
 ''' Algorithm
 
 set total and count to 0

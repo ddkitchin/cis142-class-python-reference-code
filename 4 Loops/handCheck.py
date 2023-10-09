@@ -1,3 +1,4 @@
+# @copyright Deborah Kitchin
 # set i to a value. Try 1, 3, 0, 4, and 10
 i = 1
 

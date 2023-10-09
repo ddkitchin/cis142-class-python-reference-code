@@ -1,4 +1,4 @@
-#@opyright Deborah Kitchin
+# @copyright Deborah Kitchin
 
 limit = int (input("Count from 1 to what number? "))
 

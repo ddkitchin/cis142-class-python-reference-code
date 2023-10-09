@@ -1,3 +1,5 @@
+# @copyright Deborah Kitchin
+
 # value = 10000 #uncomment to make a global variable value
 
 def main():

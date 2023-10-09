@@ -1,3 +1,5 @@
+# @copyright Deborah Kitchin
+
 def main():
     # created a list of 3 items
     l = ["a", "b", "c"]

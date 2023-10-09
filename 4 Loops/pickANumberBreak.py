@@ -1,3 +1,5 @@
+# @copyright Deborah Kitchin
+
 from random import randint
 # Guess the number game. You can play as long as you want
 keepGoing = True

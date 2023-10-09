@@ -1,4 +1,4 @@
-#@copyrigh Deborah Kitchin
+#@copyright Deborah Kitchin
 roster = ["Nathan", "Nancy", "Amber", "Aricke", "Dylan", "Jeffery", "AJ"]
 
 # Add item to end of list

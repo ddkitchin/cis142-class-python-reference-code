@@ -1,4 +1,3 @@
-#@copyright Deborah Kitchin
 # @copyright Deborah Kitchin
 def main():
     privacy = getPrivacy()

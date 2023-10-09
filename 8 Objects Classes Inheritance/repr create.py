@@ -1,3 +1,5 @@
+# @copyright Deborah Kitchin
+#
 class Weapon:
     
     def __init__(self,damage):

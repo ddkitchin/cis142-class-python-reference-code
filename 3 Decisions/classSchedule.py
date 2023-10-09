@@ -1,3 +1,5 @@
+# @copyright Deborah Kitchin
+
 totalHours = 0
 
 classHours=int(input("Enter class hours "))

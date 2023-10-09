@@ -1,3 +1,4 @@
+# @copyright Deborah Kitchin
 def main() :
    initialBalance = 10000
    rate = 4
