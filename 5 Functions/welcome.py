@@ -22,4 +22,5 @@ def displayWelcome(name=""):
     print("compete against the computer. The winner is")
     print("the higher card.")
 
-main()
+if __name__ == "__main__":
+    main()

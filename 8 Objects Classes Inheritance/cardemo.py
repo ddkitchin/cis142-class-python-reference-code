@@ -22,4 +22,5 @@ def printInfo(car): #dynamic lookup of objects of type Car or Vehicle will work.
     print("===car attibutes===")
     print(car.getDescription())
     
-main()
+if __name__ == "__main__":
+    main()

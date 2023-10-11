@@ -120,5 +120,5 @@ def getPrivacy():
 
     return "FIX ME"  # use validPrivacy (privacy) similar to how first name is done above
 
-
-main()
+if __name__ == "__main__":
+    main()

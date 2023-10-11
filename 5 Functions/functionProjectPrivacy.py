@@ -26,5 +26,5 @@ def getPrivacy():
     else:
         return "Public"
 
-
-main()
+if __name__ == "__main__":
+    main()

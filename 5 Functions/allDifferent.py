@@ -15,5 +15,6 @@ def allDifferent(value1, value2, value3):
     if (value1 != value2 and value1 != value3 and value2 != value3):
         different = True
     return different
-    
-main()
+
+if __name__ == "__main__":
+    main()

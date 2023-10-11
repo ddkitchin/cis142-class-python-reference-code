@@ -24,4 +24,5 @@ def main() :
 def futureValue(initialBalance, rate, years) :
    return initialBalance * (1 + rate / 100) ** years
 
-main()
+if __name__ == "__main__":
+    main()

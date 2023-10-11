@@ -113,4 +113,5 @@ def processInventory(move):
         #tell them they can't get it
         print(f"Can't get {move[1]}!")    
 
-main()
+if __name__ == "__main__":
+    main()

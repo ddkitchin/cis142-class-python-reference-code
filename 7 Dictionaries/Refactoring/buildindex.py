@@ -67,4 +67,5 @@ def printIndex(entries) :
       print()
       
 # Start the program.
-main()
+if __name__ == "__main__":
+    main()

@@ -57,4 +57,5 @@ def showWinner():
             if column != EMPTY:
                 print(column,"you won. YEAH!!!! Please sit down.")
             
-main()
+if __name__ == "__main__":
+    main()

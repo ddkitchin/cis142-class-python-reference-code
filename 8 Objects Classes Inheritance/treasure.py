@@ -55,5 +55,6 @@ def main():
 
     print(f'Total value is {totalValue}.')    
 
-main()
+if __name__ == "__main__":
+    main()
     

@@ -13,7 +13,8 @@ def enterGrades():
       count += 1
       if count > 10:
          break
-            # Try used to mark where you could want to watch for errors.
+      
+      # Try used to mark where you could want to watch for errors.
       try:
          mark = int(input("Please enter the exam mark out of 100 "))
          # get to next line when mark is numeric
@@ -31,4 +32,5 @@ def enterGrades():
       except CustomGradeRangeError:
          print("\nPlease enter a number between 0 and 100")
 
-main()
+if __name__ == "__main__":
+    main()

@@ -19,6 +19,7 @@ def presentQuestion(q) :
    q.display()   # Uses dynamic method lookup.
    response = input("Your answer: ")
    print(q.checkAnswer(response))   # checkAnswer uses dynamic method lookup.
-   
 
-main()
+
+if __name__ == "__main__":
+    main()

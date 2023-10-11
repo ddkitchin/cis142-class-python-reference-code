@@ -32,3 +32,5 @@ main()
     
 print("final Value",value)
 '''
+if __name__ == "__main__":
+    main()

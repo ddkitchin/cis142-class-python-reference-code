@@ -70,4 +70,5 @@ def tensName(number) :
    if number >= 20 : return "twenty"
    return ""
 
-main()
+if __name__ == "__main__":
+    main()

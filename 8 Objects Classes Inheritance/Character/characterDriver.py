@@ -72,4 +72,5 @@ def printFinalResults(team1,team2):
     print("****************** Final Results **********************")
     # print the final results
         
-main()
+if __name__ == "__main__":
+    main()

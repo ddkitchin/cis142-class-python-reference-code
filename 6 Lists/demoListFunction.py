@@ -21,4 +21,5 @@ def demoListFunction(l):
     l = newL
     print ("\tList in function after set to new list", l)
 
-main()
+if __name__ == "__main__":
+    main()

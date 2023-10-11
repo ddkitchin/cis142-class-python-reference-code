@@ -73,4 +73,5 @@ def printReport(salesData) :
    print()
 
 # Start the program.   
-main()
+if __name__ == "__main__":
+    main()

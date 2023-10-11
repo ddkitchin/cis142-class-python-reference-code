@@ -10,4 +10,5 @@ def fact(n):
         print("Line 10 n=%d answer=%d" %(n, answer))
         return answer
     
-main()
+if __name__ == "__main__":
+    main()
