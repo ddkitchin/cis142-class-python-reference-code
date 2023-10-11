@@ -37,4 +37,5 @@ def main():
         else:
             print("================You got to know when to fold em")
 
-main()
+if __name__ == "__main__":
+    main()
