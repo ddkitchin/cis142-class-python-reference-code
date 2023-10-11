@@ -14,13 +14,13 @@ def main():
 
 def displayWelcome(name=""):
     if (len(name) == 0):
-        print("W", end="")
+        print(f"W",end="")
     else:
-        print(name + ", w",end="")
+        print(f'{name}, w',end="")
 
-    print("elcome to War. In this game, you will")
-    print("compete against the computer. The winner is")
-    print("the higher card.")
+    print(f"elcome to War. In this game, you will")
+    print(f"compete against the computer. The winner is")
+    print(f"the higher card.")
 
 if __name__ == "__main__":
     main()
