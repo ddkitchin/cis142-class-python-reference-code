@@ -19,18 +19,18 @@ def enterGrades():
          mark = int(input("Please enter the exam mark out of 100 "))
          # get to next line when mark is numeric
          if mark in range(0, 101):
-            print("Your mark is ", mark)
+            print(f"Your mark is {mark}.")
          else:
             # raise custom exception when number is not between 0 and 10
             raise CustomGradeRangeError
          # only get here when line 21 is executed
-         print(count, "after if else")
+         print(f"{count} after if else")
 
       # only get here when an exception is raised
       except ValueError:
-         print("\nPlease only use integers")
+         print(f"\nPlease only use integers")
       except CustomGradeRangeError:
-         print("\nPlease enter a number between 0 and 100")
+         print(f"\nPlease enter a number between 0 and 100")
 
 if __name__ == "__main__":
     main()

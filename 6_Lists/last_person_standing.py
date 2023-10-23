@@ -13,9 +13,9 @@ row and column are used as indexes. '''
 
 EMPTY=9
 # Replace EMPTY in the table with student name.
-students=[[EMPTY,EMPTY,EMPTY,EMPTY,EMPTY,EMPTY],
-          [EMPTY,EMPTY,EMPTY,EMPTY,EMPTY,EMPTY],
-          ["Helen",EMPTY,EMPTY,EMPTY,EMPTY,EMPTY],
+students=[[EMPTY,EMPTY,EMPTY,EMPTY,"Thor",EMPTY],
+          [EMPTY,EMPTY,"Black Panther",EMPTY,EMPTY,EMPTY],
+          ["Hulk",EMPTY,EMPTY,EMPTY,EMPTY,EMPTY],
           [EMPTY,EMPTY,EMPTY,EMPTY,EMPTY,EMPTY]]
 
 def main():
@@ -43,9 +43,9 @@ def playGame(count):
             column = randint(0,len(students[0])-1)
             if students[row][column] != EMPTY:
                 count -= 1
-                print(students[row][column],"please sit down.")
+                print(f'{students[row][column]} please sit down.')
                 if count != 1:
-                    while input("Thank you "+students[row][column]+". Enter Y if you are ready to continue. ").upper() != "Y":
+                    while input(f"Thank you {students[row][column]}. Enter Y if you are ready to continue. ").upper() != "Y":
                         print("Let's go")
                 students[row][column]=EMPTY
                 found=True
@@ -55,7 +55,7 @@ def showWinner():
     for row in students:
         for column in row:
             if column != EMPTY:
-                print(column,"you won. YEAH!!!! Please sit down.")
+                print(f"{column} you won. YEAH!!!! Please sit down.")
             
 if __name__ == "__main__":
     main()
