@@ -12,15 +12,22 @@ def main():
     print(roster)
 
     # Find item in list
-    if "Dylan" in roster:
-        print("Dylan is in class")
-        print("Dylan's class number is", roster.index("Dylan") + 1)
+    student = input("Enter a student name ")
+    if student in roster:
+        print(f"{student} is in class")
+        #print name with student number which is 1 plus the index.
+        print(f"{student}'s class number is {roster.index(student) + 1}")
+    else:
+        print(f"{student} is not in class")
 
-    # Remove specific iitem in list by value (remove) and by position (pop)
+    # Remove specific iitem in list by index (del), by value (remove) and by position (pop)
+    print(f'roster {roster}')
+    del roster[3]
+    print(f'roster after del [3] {roster}')
     roster.remove("Nathan")
-    print(roster)
+    print(f'roster after remove("Nathan") {roster}')
     roster.pop(2)
-    print(roster)
+    print(f'roster after pop(2) {roster}')
 
     # Sum, min and max
     grades = [90, 95, 85, 75, 65, 100]
