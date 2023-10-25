@@ -1,7 +1,14 @@
 #  This program turns an integer into its English name.
 def main() :
-   value = int(input("Please enter a positive integer < 1000: "))
-   print(intName(value))
+
+   keepGoing = True
+   while keepGoing:
+      value = int(input("Please enter a positive integer < 1000: "))
+      if 0 < value < 1000:
+         print(intName(value))
+      else:
+         print("Please enter a number between 1 and 999.")
+      keepGoing = input("Do you want to keep going Y/N ")[0].upper() == "Y"
 
 #  @return the name of the number (e.g. "two hundred seventy four")
 def intName(number) :

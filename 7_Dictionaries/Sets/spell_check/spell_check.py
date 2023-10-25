@@ -8,7 +8,7 @@ from re import split
 
 def main() :
    # Read the word list and the document.
-   correctlySpelledWords = readWords("words")
+   correctlySpelledWords = readWords("words.txt")
    documentWords = readWords("alice30.txt")
 
    # Print all words that are in the document but not the word list.
@@ -37,4 +37,5 @@ def readWords(filename) :
    return wordSet
    
 # Start the program.
-main()
+if __name__ == "__main__":
+   main()

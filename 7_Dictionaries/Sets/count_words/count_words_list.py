@@ -2,11 +2,10 @@
 #  This program counts the number of unique words.txt contained in a text document,
 #  using a list.
 #
-
 def main() :
    uniqueWords = []
 
-   filename = input("Enter filename (default: nurseryrhyme.txt): ")
+   filename = input("Enter filename (default: nursery_rhyme.txt): ")
    if len(filename) == 0 :
       filename = "nursery_rhyme.txt"
    inputFile = open(filename, "r")   
@@ -34,4 +33,5 @@ def clean(string) :
    return result
 
 # Start the program.
-main()
+if __name__ == "__main__":
+   main()
