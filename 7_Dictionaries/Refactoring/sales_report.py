@@ -6,6 +6,10 @@
 # Import a user-defined module that processes tabular data.
 import tabular_data
 
-filename = input("Enter sales data file name: ")
-salesData = tabulardata.readData(filename)
-tabulardata.printReport(salesData)
+def main():
+    filename = input("Enter sales data file name: ")
+    salesData = tabular_data.readData(filename)
+    tabular_data.printReport(salesData)
+
+if __name__ == "__main__":
+    main()
