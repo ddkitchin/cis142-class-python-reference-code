@@ -70,9 +70,10 @@ def showStatus():
     
     global currentRoom
     global inventory
+
     #print the player's current status
     print("---------------------------")
-    
+
     print(f'You are in the "{rooms[currentRoom]["name"]}"')
     
     #print the current inventory
@@ -80,15 +81,18 @@ def showStatus():
     #print an item if there is one
     if "item" in rooms[currentRoom]:
         print(f'You see a {rooms[currentRoom]["item"]}')
-    
+
     print("---------------------------")
     
 def goToRoom(move):
     
     global currentRoom
-    
+
+    # check that a direction is specified
+    if len(move) == 1:
+        print(f"Please indicate a direction")
     #check that they are allowed wherever they want to go
-    if move[1] in rooms[currentRoom]:
+    elif move[1] in rooms[currentRoom]:
         #set the current room to the new room
         currentRoom = rooms[currentRoom][move[1]]
     #there is no door (link) to the new room
@@ -100,8 +104,11 @@ def processInventory(move):
     global currentRoom
     global inventory
     
+    # check that an item is specified
+    if len(move) == 1:
+        print(f"Please indicate a direction")
     #if the room contains an item, and the item is the one they want to get
-    if "item" in rooms[currentRoom] and move[1] == rooms[currentRoom]["item"]:
+    elif "item" in rooms[currentRoom] and move[1] == rooms[currentRoom]["item"]:
         #add the item to their inventory
         inventory += [move[1]]
         #display a helpful message

@@ -27,8 +27,7 @@ class Card:
 
     def __str__(self):
         #       Returns a human-readable string representation.
-        return '%s of %s' % (self._rankNames[self._rank],
-                             self._suitNames[self._suit])
+        return f'{self._rankNames[self._rank]} of {self._suitNames[self._suit]}'
 
     def __lt__(self, other):
         return (self._suit, self._rank) < (other._suit, other._rank)
