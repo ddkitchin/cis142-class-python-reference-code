@@ -12,6 +12,10 @@ def main():
       values.append(float(userInput))
       userInput = input("Please enter values, Q to quit: ")
 
+   processList(values)
+
+def processList (values):
+
    # Find the largest value.
    largest = values[0]
    for i in range(1, len(values)) :
