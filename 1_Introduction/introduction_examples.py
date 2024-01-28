@@ -1,6 +1,6 @@
 #@copyright Deborah Kitchin
 
-def main():
+def main(): # Include in all programs. Defines the function main. We will learn more about this later.
     # Hello World
     print("Hello World")
 
@@ -28,5 +28,7 @@ def main():
     # Calculated values
     print(f"{firstName} is {age - myAge} older than {myName}")
 
-if __name__ == "__main__":
-    main()
+# This decision (if statement) checks to see if the program is being run from this
+# program or referenced from another program. We will learn more about this later.
+if __name__ == "__main__": # Include in all programs. Checks to see if running from this program.
+    main() # Include in  all programs. Calls main
