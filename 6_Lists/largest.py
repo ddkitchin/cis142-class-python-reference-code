@@ -12,7 +12,8 @@ def main():
       values.append(float(userInput))
       userInput = input("Please enter values, Q to quit: ")
 
-   processList(values)
+   if len(values) > 0:
+      processList(values)
 
 def processList (values):
 
