@@ -4,9 +4,9 @@ from random import randint
 class Hand():
 
     def __init__():
-        # Set name and power to empty string if no parameter is passed using hte parameter in the line above.
-        # Set class name to parameter name and classs power to paramter power.
-        # Set _wins and _ties ot 0
+        # Set name and power to empty string if no parameter is passed using the parameter in the line above.
+        # Set class name to parameter name and class power to parameter power.
+        # Set wins and ties ot 0.
         print("init")  # remove this when you fix the function.
 
     def getName():
@@ -75,6 +75,10 @@ def main():
 
 
 def runGame():
+
+    # You can use this algorithm to create your program. If you have another algorithm that you want to use
+    # that is fine, as long as the results are correct and the output matches the requirements.
+
     # create a list with a 3 possible hands Rock, Paper, and Scissors objects as items in the list.
 
     # for i in 100
@@ -95,7 +99,6 @@ def runGame():
     # for each hand in hands
     #    print the hand score
     print('runGame')
-
 
 if __name__ == "__main__":
     main()
