@@ -2,7 +2,7 @@
 
 from random import randint
 
-def main():
+def main()-> None:
     # for loop that goes through each character in a string.
     name = "Debbie"
     for letter in name:

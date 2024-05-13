@@ -5,7 +5,7 @@ import math
 # the alignment will be thrown off by the varying character width.
 # @copyright Deborah Kitchin
 
-def main():
+def main()-> None:
     # simple fstring versus book demo
     print('pi={:.2f}'.format(math.pi))      # book formatting
     print(f'pi={math.pi:.2f}')              # formatting we will use - fstring

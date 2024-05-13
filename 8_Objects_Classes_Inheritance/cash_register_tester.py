@@ -4,7 +4,7 @@
 
 from CashRegister import CashRegister
 
-def main():
+def main()->None:
 
     register1 = CashRegister()
     register1.addItem(1.95)

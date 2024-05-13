@@ -10,7 +10,7 @@ process salaries until salary 0.0 or less is entered.
 
 print average salary
 '''
-def main():
+def main()-> None:
     total = 0.0
     count = 0
 

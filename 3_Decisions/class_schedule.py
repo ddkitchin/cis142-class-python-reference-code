@@ -1,6 +1,6 @@
 # @copyright Deborah Kitchin
 
-def main():
+def main()-> None:
 
     totalHours = 0
 

@@ -1,6 +1,6 @@
 # @copyright Deborah Kitchin
 
-def main():
+def main()-> None:
     limit = int (input("Count from 1 to what number? "))
 
     print("for i in range (limit) :")

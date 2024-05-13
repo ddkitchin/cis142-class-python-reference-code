@@ -1,5 +1,5 @@
 #@copyright Deborah Kitchin
-def main():
+def main()->None:
 
     # Note: I am using a variable name nameKey. This is not very "pythonic".
     # In python you don't want to name variables with an indication of the type.

@@ -1,5 +1,5 @@
 # @copyright Deborah Kitchin
-def main() :
+def main() -> None:
    initialBalance = 10000
    rate = 4
    years = 3
@@ -21,7 +21,7 @@ def main() :
    print(f'In {years} years at {rate}%, ${initialBalance:,} will be ${futureValue(initialBalance, rate, years):,.2f}.')
    
 #  @return the future value of the investment
-def futureValue(initialBalance, rate, years) :
+def futureValue(initialBalance:int, rate:float, years:int) -> float:
    return initialBalance * (1 + rate / 100) ** years
 
 if __name__ == "__main__":

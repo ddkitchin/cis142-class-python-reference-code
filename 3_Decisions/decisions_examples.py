@@ -1,6 +1,6 @@
 #@copyright Deborah Kitchin
 
-def main():
+def main()-> None:
     # variable haveDog set to user input. Notice = this is the algebraic equal sign
     haveDog=input("Do you have a dog? (Y or N): ")
 

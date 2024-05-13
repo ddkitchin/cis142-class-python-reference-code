@@ -1,6 +1,6 @@
 #@copyright Deborah Kitchin
 
-def main():
+def main()-> None:
     #set real variable score to the user input
     score = float(input("Enter score: "))
 

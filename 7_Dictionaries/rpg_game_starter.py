@@ -22,7 +22,7 @@ rooms = {
 
          }
 
-def main():
+def main()->None:
     
     showInstructions()
     
@@ -56,7 +56,7 @@ def main():
         if move[0] == "menu" :
             showInstructions()
 
-def showInstructions():
+def showInstructions()->None:
     
     # comment
     print("RPG Game")
@@ -66,7 +66,7 @@ def showInstructions():
     print("'get [item]'")
     print("'menu'")
 
-def showStatus():
+def showStatus()->None:
     
     global currentRoom
     global inventory
@@ -84,7 +84,7 @@ def showStatus():
 
     print("---------------------------")
     
-def goToRoom(move):
+def goToRoom(move)->None:
     
     global currentRoom
 
@@ -99,7 +99,7 @@ def goToRoom(move):
     else:
         print("You can't go that way!") 
         
-def processInventory(move):
+def processInventory(move)->None:
 
     global currentRoom
     global inventory

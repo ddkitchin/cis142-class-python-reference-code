@@ -7,7 +7,7 @@
 #  @param filename name of the input file
 #  @return a dictionary with the keys and data lists found in the file
 #
-def readData(filename) :
+def readData(filename:str) ->dict:
    # Create an empty dictionary.
    data = {}
    
@@ -26,7 +26,7 @@ def readData(filename) :
 #  @param fields a list of strings comprising the record fields
 #  @return a list of floating-point values
 #
-def buildList(fields) :
+def buildList(fields:list) ->list:
    values = []
    for i in range(1, len(fields)) :
       sales = float(fields[i])
@@ -37,7 +37,7 @@ def buildList(fields) :
 ## Prints a sales report.
 #  @param data a table composed of a dictionary whose values are lists of numbers
 #
-def printReport(data) :
+def printReport(data:dict) ->None:
    # Find the number of columns as the length of the longest list.
    numColumns = 0
    for row in data.values() :

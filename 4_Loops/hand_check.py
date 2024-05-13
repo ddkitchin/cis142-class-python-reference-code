@@ -1,6 +1,6 @@
 # @copyright Deborah Kitchin
 
-def main():
+def main()-> None:
     # set i to a value. Try 1, 3, 0, 4, and 10
     i = 1
 

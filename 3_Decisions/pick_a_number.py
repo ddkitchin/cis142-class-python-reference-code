@@ -2,7 +2,7 @@
 
 from random import randint
 
-def main():
+def main()-> None:
     number = randint(1,10)
 
     # print(number) #Comment after testing done

@@ -2,7 +2,7 @@
 # import math library
 from math import *
 
-def main():
+def main()-> None:
     # if you use the line below instead of the line above all math functions must be proceeded by math.
     # import math
     # print (math.pi)

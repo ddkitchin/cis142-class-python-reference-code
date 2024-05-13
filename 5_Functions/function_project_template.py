@@ -1,5 +1,5 @@
 # @copyright Deborah Kitchin
-def main():
+def main()-> None:
     name = getName()
     address = getAddress()
     playerName = getPlayerName()
@@ -10,7 +10,7 @@ def main():
     print(privacy)
 
 
-def validFirstName(first):
+def validFirstName(first:str)-> bool:
     # @return True if first name is not empty
 
     if len(first) == 0:
@@ -20,19 +20,19 @@ def validFirstName(first):
         return True
 
 
-def validMiddleName(middle):
+def validMiddleName(middle:str)-> str:
     # @return middle name and a space unless middle name is empty.
 
     return "FIX ME"
 
 
-def validLastName(first, last):
+def validLastName(first: str, last: str)-> str:
     # @return True is last name is valid otherwise false
 
     return "FIX ME"
 
 
-def getName():
+def getName()-> str:
     # @return First Middle and Last Name Validated.
     # There should be a space after the first name.
 
@@ -49,31 +49,31 @@ def getName():
     return first + " " + middle + last
 
 
-def validStreet(street):
+def validStreet(street:str)-> str:
     # @return True if street is not empty
 
     return "FIX ME"
 
 
-def validCity(city):
+def validCity(city:str)-> str:
     # @return True if city is not empty
 
     return "FIX ME"
 
 
-def validState(state):
+def validState(state:str)-> str:
     # @return True if state is not empty
 
     return "FIX ME"
 
 
-def validZipCode(zipCode):
+def validZipCode(zipCode: str)-> str:
     # @return True if zipcode is valid
 
     return "FIX ME"
 
 
-def getAddress():
+def getAddress()-> str:
     # @return valid "street, city state zipcode"
 
     street = "FIX ME"  # use validStreet (street) similar to how first name is done above.
@@ -87,19 +87,19 @@ def getAddress():
     return street + ", " + city + ", " + state + " " + zipCode
 
 
-def validPlayerName(playerName):
+def validPlayerName(playerName: str)-> bool:
     # @return True if valid player name.
 
     return "FIX ME"
 
 
-def confirmPlayerName(playerName, playerName2):
+def confirmPlayerName(playerName:str, playerName2:str)-> bool:
     # @return True if player names match, otherwise False
 
     return "FIX ME"
 
 
-def getPlayerName():
+def getPlayerName()-> str:
     # @return valid player name
 
     playerName = "FIX ME"  # use validPlayerName (playerName) similar to how first name is done above
@@ -109,13 +109,13 @@ def getPlayerName():
     return "FIX ME"
 
 
-def validPrivacy(privacy):
+def validPrivacy(privacy:str)-> bool:
     # @return True if Y or N were selected otherwise False
 
     return "FIX ME"
 
 
-def getPrivacy():
+def getPrivacy()-> str:
     # @return validated Public or Private visibility.
 
     return "FIX ME"  # use validPrivacy (privacy) similar to how first name is done above

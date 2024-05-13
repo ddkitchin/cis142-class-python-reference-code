@@ -1,6 +1,6 @@
 # @copyright Deborah Kitchin
 
-def main():
+def main()-> None:
     # string literal between the ""
     print("Coke Selected")
 

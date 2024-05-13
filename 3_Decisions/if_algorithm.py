@@ -1,6 +1,6 @@
 #@copyright Deborah Kitchin
 
-def main():
+def main()-> None:
     birthMonth=int(input("Enter your month "))
     checkDate1=0
     checkDate2=0

@@ -10,7 +10,7 @@ The randint function(0,MAX_NUMBERS), stops at 5.'''
 
 from random import *
 MAX_NUMBERS = 5
-def main():
+def main()-> None:
     print("Random Reals")
     for i in range (MAX_NUMBERS):
         print("Iteration=",i,end="")

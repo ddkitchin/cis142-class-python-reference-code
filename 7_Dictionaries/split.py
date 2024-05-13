@@ -1,6 +1,6 @@
 # @copyright Deborah Kitchin
 
-def main():
+def main()->None:
     # How to convert a string of values to a list.
 
     #1 enter values with space between

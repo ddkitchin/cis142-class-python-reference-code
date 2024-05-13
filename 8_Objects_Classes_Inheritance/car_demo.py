@@ -1,6 +1,6 @@
 from Car import Car,Vehicle # or * instead of Car,Vehicle
 
-def main():
+def main()->None:
     aPlainCar=Car()
     #print(aPlainCar.getNumberOfTires()) #need to test
     #print(aPlainCar.getDescription()) #need to test
@@ -18,7 +18,7 @@ def main():
     v = Vehicle(10)
     printInfo(v)     
 
-def printInfo(car): #dynamic lookup of objects of type Car or Vehicle will work.
+def printInfo(car:Car)->None: #dynamic lookup of objects of type Car or Vehicle will work.
     print("===car attibutes===")
     print(car.getDescription())
     

@@ -1,6 +1,6 @@
 #@copyright Deborah Kitchin
 
-def main():
+def main()->None:
        students = ["John", "Bob", "Nancy"] # list
        print(students)
        print(f'The class is {type(students)}.')

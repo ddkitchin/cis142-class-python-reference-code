@@ -2,7 +2,7 @@
 
 from Character import Character
 
-def main():
+def main()->None:
 
     print("TEAM 1")
     # create team 1 using createCharacter() to create each character.
@@ -30,7 +30,7 @@ You can adjust createCharacter to pass name, strength and health as parameters
 and then the function return the object of type class.
 
 You do not have to use createCharacter if you want to create your objects in your own way.'''
-def createCharacter():
+def createCharacter()->Character:
     name=""
     #make sure the name is not empty
         
@@ -44,7 +44,7 @@ def createCharacter():
     # the values you set for name, strength, and health
     return Character(name,strength,health)
 
-def fight(team1,team2):
+def fight(team1:list,team2:list)->None:
     totalStrength1=0
     # calculate team 1s strength and save it to compare to team1
     
@@ -64,11 +64,11 @@ def fight(team1,team2):
     print()
     printTeam(team2)
 
-def printTeam(team):
+def printTeam(team:list)->None:
     print("Name        Strength      Health        Magic")
     # print the team members names, strength, health, and magic
 
-def printFinalResults(team1,team2):
+def printFinalResults(team1:list,team2:list)->None:
     print("****************** Final Results **********************")
     # print the final results
         

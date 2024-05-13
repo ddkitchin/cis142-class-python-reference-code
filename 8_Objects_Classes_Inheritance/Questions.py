@@ -1,28 +1,28 @@
 class Question :
  
-   def __init__(self) :
+   def __init__(self)->None :
       self._text = ""
       self._answer = ""
       
-   def setText(self, questionText) :   
+   def setText(self, questionText:str) ->None:
       self._text = questionText
 
-   def setAnswer(self, correctResponse) :
+   def setAnswer(self, correctResponse:str) ->None:
       self._answer = correctResponse
 
-   def checkAnswer(self, response) :
+   def checkAnswer(self, response:str) ->bool:
       return response == self._answer
 
-   def display(self) :
+   def display(self)->None :
       print(self._text)         
 
-class ChoiceQuestion(Question) :
+class ChoiceQuestion(Question):
  
-   def __init__(self) :
+   def __init__(self) ->None:
       super().__init__()
       self._choices = []
 
-   def addChoice(self, choice, correct) :
+   def addChoice(self, choice:str, correct:str)->None :
       self._choices.append(choice)
       if correct :
          # Convert len(choices) to string.
@@ -30,7 +30,7 @@ class ChoiceQuestion(Question) :
          self.setAnswer(choiceString)
    
    # Override Question.display().
-   def display(self) :
+   def display(self) ->None:
       # Display the question text.
       super().display()
       

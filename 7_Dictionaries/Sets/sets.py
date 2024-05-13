@@ -1,5 +1,5 @@
 #@copyright Deborah Kitchin
-def main():
+def main()->None:
     game102Class=set()
     pythonClass=set()
 

@@ -1,6 +1,6 @@
 # @copyright Deborah Kitchin
 
-def main():
+def main()-> None:
     price = float(input("Enter price: "))
 
     if price < 28:

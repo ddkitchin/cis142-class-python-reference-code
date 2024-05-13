@@ -1,6 +1,6 @@
 #@copyright Deborah Kitchin
 
-def main():
+def main()-> None:
     # This is an infinite loop if you uncomment it, then your program will
     # continually run lines 4-6. To stop you must kill the program.
     '''while True:

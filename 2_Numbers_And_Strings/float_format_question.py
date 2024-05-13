@@ -1,6 +1,6 @@
 from datetime import date
 
-def main():
+def main()-> None:
 
     NAME = "Penny" #string
     BREED = "Golden Lab" #string

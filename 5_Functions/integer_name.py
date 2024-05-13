@@ -1,5 +1,5 @@
 #  This program turns an integer into its English name.
-def main() :
+def main() -> None:
 
    keepGoing = True
    while keepGoing:
@@ -11,7 +11,7 @@ def main() :
       keepGoing = input("Do you want to keep going Y/N ")[0].upper() == "Y"
 
 #  @return the name of the number (e.g. "two hundred seventy four")
-def intName(number) :
+def intName(number:int) -> str:
    
    # The number that still needs to be converted.
    name = ""   # Start name with empty string.
@@ -39,7 +39,7 @@ def intName(number) :
    return name
 
 #  @return the digit name
-def digitName(number) :
+def digitName(number:int) -> str:
    if number == 1 : return "one"
    if number == 2 : return "two"
    if number == 3 : return "three"
@@ -52,7 +52,7 @@ def digitName(number) :
    return ""
 
 #  @return the teens name
-def teenName(number) :
+def teenName(number:int)-> str :
    if number == 10 : return "ten"
    if number == 11 : return "eleven"
    if number == 12 : return "twelve"
@@ -66,7 +66,7 @@ def teenName(number) :
    return ""
 
 #  @return tens word
-def tensName(number) :
+def tensName(number:int) -> str:
    if number >= 90 : return "ninety"
    if number >= 80 : return "eighty"
    if number >= 70 : return "seventy"

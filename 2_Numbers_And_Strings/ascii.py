@@ -1,6 +1,6 @@
 #@copyright Deborah Kitchin
 
-def main():
+def main()-> None:
     #Set variable character to a space.
     character = " "
     #Keep going while the variable chacters is not an empty string.

@@ -2,12 +2,13 @@
 #  This program builds the index of a book from terms and page numbers.
 #
 
-def main() :
+def main() -> None:
    # Create an empty dictionary.
    indexEntries = {}
    
    # Extract the data from the text file.
    infile = open("index_data.txt", "r")
+   print(type(infile))
    fields = extractRecord(infile)
    while len(fields) > 0 :
       addWord(indexEntries, fields[1], fields[0])
@@ -23,7 +24,7 @@ def main() :
 #  @return a list containing the page number and term or an empty list if
 #  the end of file was reached
 #
-def extractRecord(infile) :
+def extractRecord(infile) ->list:
    line = infile.readline()
    if line != "" :   
       fields = line.split(":")      
@@ -38,7 +39,7 @@ def extractRecord(infile) :
 #  @param term the term to be added to the index
 #  @param page the page number for this occurrence of the term
 #
-def addWord(entries, term, page) :   
+def addWord(entries:dict, term:str, page:int) -> None:
    # If the term is already in the dictionary, add the page to the set.
    if term in entries :
       pageSet = entries[term]
@@ -52,7 +53,7 @@ def addWord(entries, term, page) :
 ## Print the index listing.
 #  @param entries a dictionary containing the entries of the index
 #
-def printIndex(entries) :
+def printIndex(entries:dict) ->None:
    for key in sorted(entries) :
       print(key, end=" ")
       pageSet = entries[key]

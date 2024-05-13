@@ -1,7 +1,7 @@
 #imports from counter class
 from Counter import Counter
 
-def main():
+def main()->None:
     # 1 class Counter. 2 instance of class Counter costcoCounter and samsCounter
     costcoCounter=Counter()
     # If you don't have a dunder init __init__() you must reset in this class to get value set to 0.

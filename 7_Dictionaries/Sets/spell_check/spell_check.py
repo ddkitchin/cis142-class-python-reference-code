@@ -6,7 +6,7 @@
 # Import the split function from the regular expression module.
 from re import split
 
-def main() :
+def main()->None :
    # Read the word list and the document.
    correctlySpelledWords = readWords("words.txt")
    documentWords = readWords("alice30.txt")
@@ -21,7 +21,7 @@ def main() :
 #  @return a set with all lowercased words in the file. Here, a word is a 
 #  sequence of upper- and lowercase letters
 #   
-def readWords(filename) :
+def readWords(filename:str) ->set:
    wordSet = set()
    inputFile = open(filename, "r")
    

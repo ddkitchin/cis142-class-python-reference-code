@@ -1,6 +1,6 @@
 #@ copyright Deborah Kitchin
 
-def main():
+def main()-> None:
     # boolean statement and boolean statement
     grade = int(input("Enter grade: "))
     if (grade > 79) and (grade < 90):

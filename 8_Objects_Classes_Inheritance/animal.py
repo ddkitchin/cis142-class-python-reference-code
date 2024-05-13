@@ -1,52 +1,52 @@
 # @copyright Deborah Kitchin
 class Animal:
 
-    def __init__(self, sound="Unknown", food="Unknown", movement="run"):
+    def __init__(self, sound:str="Unknown", food:str="Unknown", movement:str="run")->None:
         self._sound = sound
         self._food = food
         self._movement = movement
 
-    def __repr__(self):
+    def __repr__(self)->str:
         return f'Animal [{self.__class__.__name__},{self._sound},{self._food},{self._movement}]'
 
-    def speak(self):
+    def speak(self)->None:
         print(self._sound, end=" ")
 
-    def eat(self):
+    def eat(self)->None:
         print(self._food, end=" ")
 
-    def move(self):
+    def move(self)->None:
         print(self._movement, end=" ")
 
 
 class Dog(Animal):
 
-    def __init__(self):
+    def __init__(self)->None:
         super().__init__("ruff", "dog food")
 
-    def goOnWalk(self):
+    def goOnWalk(self)->None:
         print("walk, walk, walk")
 
 
 class Wolf(Animal):
 
-    def __init__(self):
+    def __init__(self)->None:
         super().__init__("grrr", "squirrels")
 
-    def hunt(self):
+    def hunt(self)->None:
         print("grrr, run, catch, kill")
 
 
 class Eagle(Animal):
 
-    def __init__(self):
+    def __init__(self)->None:
         super().__init__("squeal", "rabbits", "fly")
 
-    def hunt(self):
+    def hunt(self)->None:
         print("squeal, fly, claw, carry, kill")
 
 
-def showMe(animal):
+def showMe(animal:Animal)->None:
     print(animal, end=": ")
     print()
     print("\tcalling speak=", end="")
@@ -60,7 +60,7 @@ def showMe(animal):
     # animal.goOnWalk() # wrong only dogs go on walks
 
 
-def main():
+def main()->None:
     print("*****Init")
     object1 = Animal()  # take defaults
     object2 = Animal('meow', 'mouse', 'prowl')  # specify attributes

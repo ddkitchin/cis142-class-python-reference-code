@@ -8,7 +8,7 @@ for every character in the phone number
 print new number
 '''
 
-def main():
+def main()-> None:
     phoneNumber = input("Enter a phone number: ")
     newNumber = ""
 

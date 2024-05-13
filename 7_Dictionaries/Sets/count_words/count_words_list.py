@@ -2,7 +2,7 @@
 #  This program counts the number of unique words.txt contained in a text document,
 #  using a list.
 #
-def main() :
+def main()-> None :
    uniqueWords = []
 
    filename = input("Enter filename (default: nursery_rhyme.txt): ")
@@ -24,7 +24,7 @@ def main() :
 #  @param string the string to be cleaned
 #  @return the cleaned string
 #
-def clean(string) : 
+def clean(string:str)->str :
    result = ""
    for char in string :
       if char.isalpha() :

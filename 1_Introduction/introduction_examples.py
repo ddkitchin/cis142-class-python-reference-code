@@ -1,6 +1,6 @@
 #@copyright Deborah Kitchin
 
-def main(): # Include in all programs. Defines the function main. We will learn more about this later.
+def main()-> None: # Include in all programs. Defines the function main. We will learn more about this later.
     # Hello World
     print("Hello World")
 

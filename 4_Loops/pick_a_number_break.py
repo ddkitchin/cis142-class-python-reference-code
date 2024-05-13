@@ -2,7 +2,7 @@
 
 from random import randint
 
-def main():
+def main()-> None:
 # Guess the number game. You can play as long as you want
     keepGoing = True
     games = 0  # counts how many games are played

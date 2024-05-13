@@ -1,5 +1,5 @@
 #  This program turns an integer into its English name using a dictionary.
-def main():
+def main()-> None:
     keepGoing = True
     while keepGoing:
         value = int(input("Please enter a positive integer < 1000: "))
@@ -11,7 +11,7 @@ def main():
 
 
 #  @return the name of the number (e.g. "two hundred seventy four")
-def intName(number):
+def intName(number:int)->str:
 
     # The number that still needs to be converted.
     name = ""  # Start name with empty string.

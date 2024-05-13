@@ -2,7 +2,7 @@
 
 from random import randint
 
-def main():
+def main()-> None:
     while ("Y"==input("Do you want to keep going? ").upper()):
         string=input("Enter a string ")
         print(f"String is {string}")

@@ -1,6 +1,6 @@
 from Questions import Question,ChoiceQuestion
 
-def main() :
+def main() ->None:
    first = Question()
    first.setText("Who was the inventor of Python?")
    first.setAnswer("Guido van Rossum")
@@ -15,11 +15,14 @@ def main() :
    presentQuestion(first)
    presentQuestion(second)
 
-def presentQuestion(q) :
+def presentQuestion(q:Question) ->None:
    q.display()   # Uses dynamic method lookup.
    response = input("Your answer: ")
-   print(q.checkAnswer(response))   # checkAnswer uses dynamic method lookup.
-
+   if q.checkAnswer(response):  # checkAnswer uses dynamic method lookup.
+      print(f'Congratulations you got the right answer')
+   else:
+      print(f'I am sorry. That is not the correct answer')
+   print()
 
 if __name__ == "__main__":
     main()

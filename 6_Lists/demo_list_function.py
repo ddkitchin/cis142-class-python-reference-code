@@ -1,6 +1,6 @@
 # @copyright Deborah Kitchin
 
-def main():
+def main()-> None:
     # created a list of 3 items
     l = ["a", "b", "c"]
     print("List before function", l)
@@ -8,7 +8,7 @@ def main():
     demoListFunction(l)
     print("List after function", l)
 
-def demoListFunction(l):
+def demoListFunction(l:list)-> None:
     
     print("\tList in function", l)
     

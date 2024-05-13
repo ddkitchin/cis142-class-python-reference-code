@@ -6,13 +6,13 @@ them with the name; otherwise it will greet them with
 a generic welcome.
     
 '''
-def main():
+def main()-> None:
     print("in main")
     displayWelcome()
     ''' what happens when name is not entered? '''
     displayWelcome(input("Enter name: "))
 
-def displayWelcome(name=""):
+def displayWelcome(name:str="")-> None:
     if (len(name) == 0):
         print(f"W",end="")
     else:

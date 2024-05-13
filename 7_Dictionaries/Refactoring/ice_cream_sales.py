@@ -3,7 +3,7 @@
 #  and prints a report sorted by flavor.
 #
 
-def main() : 
+def main() -> None:
    salesData = readData("ice_cream.txt")
    printReport(salesData)
 
@@ -12,7 +12,7 @@ def main() :
 #  @return a dictionary whose keys are ice cream flavors and 
 #  whose values are sales data
 #
-def readData(filename) :
+def readData(filename:str)->dict :
    # Create an empty dictionary.
    salesData = {}
    
@@ -31,7 +31,7 @@ def readData(filename) :
 #  @param fields a list of strings comprising the record fields
 #  @return a list of floating-point values
 #
-def buildList(fields) :
+def buildList(fields:list)->list :
    storeSales = []
    for i in range(1, len(fields)) :
       sales = float(fields[i])
@@ -42,7 +42,7 @@ def buildList(fields) :
 ## Prints a sales report.
 #  @param salesData a table composed of a dictionary of lists
 #
-def printReport(salesData) :
+def printReport(salesData:dict) ->None:
    # Find the number of stores as the length of the longest store sales list.
    numStores = 0
    for storeSales in salesData.values() :
