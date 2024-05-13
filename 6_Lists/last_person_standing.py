@@ -18,13 +18,13 @@ students=[[EMPTY,EMPTY,EMPTY,EMPTY,"Thor",EMPTY],
           ["Hulk",EMPTY,EMPTY,EMPTY,EMPTY,EMPTY],
           [EMPTY,EMPTY,EMPTY,EMPTY,EMPTY,EMPTY]]
 
-def main():
+def main()-> None:
     count=calculateStudents()
     playGame(count)
     showWinner()
 
 # Figure out how many students in class
-def calculateStudents():
+def calculateStudents()-> int:
     count=0
     for row in students:
         for column in row:
@@ -33,7 +33,7 @@ def calculateStudents():
     return count
 
 # Play the Last Person Standing Game
-def playGame(count):
+def playGame(count:int)-> None:
     while input("Class, please stand up. Enter Y when class is standing. ").upper() != "Y":
         print("Let's go")
     while (count > 1):
@@ -51,7 +51,7 @@ def playGame(count):
                 found=True
                     
 # Show the winner.
-def showWinner():
+def showWinner()-> None:
     for row in students:
         for column in row:
             if column != EMPTY:

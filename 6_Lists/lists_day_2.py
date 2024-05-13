@@ -1,6 +1,6 @@
 #@copyright Deborah Kitchin
 
-def main():
+def main()-> None:
     roster = ["Nathan", "Nancy", "Amber", "Aricke", "Dylan", "Jeffery", "AJ"]
 
     # Add item to end of list

@@ -3,10 +3,10 @@
 class CustomGradeRangeError(Exception):
    pass
 
-def main():
+def main()-> None:
    enterGrades()
 
-def enterGrades():
+def enterGrades()-> None:
    count = 0
    # infinite loop that breaks when count = 10
    while True:

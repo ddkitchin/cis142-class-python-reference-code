@@ -2,7 +2,7 @@
 #  This program reads a sequence of values and prints them, marking the largest value.
 #
 
-def main():
+def main()-> None:
    # Create an empty list.
    values = []
 
@@ -15,7 +15,7 @@ def main():
    if len(values) > 0:
       processList(values)
 
-def processList (values):
+def processList (values:list)-> None:
 
    # Find the largest value.
    largest = values[0]

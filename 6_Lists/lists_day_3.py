@@ -1,7 +1,7 @@
 #@copyright Deborah Kitchin
 from random import randint
 
-def main():
+def main()-> None:
     # Tuple example DOES NOT CHANGE AFTER DEFINED May see this, but not expected to use.
     rosterTuple = ("Debbie", "Nancy", "Amber", "Aricke", "Dylan", "Jeffery", "AJ")
     print(rosterTuple)
