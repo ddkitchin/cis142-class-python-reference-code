@@ -1,7 +1,7 @@
 #@copyright Deborah Kitchin
 # Define Lists
 
-def main():
+def main()-> None:
     values = []  # empty list
     print("values=", values)
 
