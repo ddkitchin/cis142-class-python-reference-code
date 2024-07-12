@@ -8,11 +8,12 @@ for every character in the phone number
 print new number
 '''
 
-def main()-> None:
+
+def main() -> None:
     phoneNumber = input("Enter a phone number: ")
     newNumber = ""
 
-    print("Orignal number",phoneNumber)
+    print("Orignal number", phoneNumber)
     print(newNumber)
 
     for character in phoneNumber:
@@ -39,7 +40,8 @@ def main()-> None:
         else:
             newNumber = newNumber + character
 
-    print("final new number",newNumber)
+    print("final new number", newNumber)
+
 
 if __name__ == "__main__":
     main()

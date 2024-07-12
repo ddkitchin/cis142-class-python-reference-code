@@ -1,14 +1,14 @@
 #@copyright Deborah Kitchin
 # Define Lists
 
-def main()-> None:
+def main() -> None:
     values = []  # empty list
     print("values=", values)
 
     # list of month numbers --- notice month 1 is index0
     months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     print("months=", months)
-    print ("First month number is", months[0])
+    print("First month number is", months[0])
 
     # list of students in class
     roster = ["Archie", "Nancy", "Amber", "Aricke", "Dylan", "Jeffery", "AJ"]
@@ -38,8 +38,7 @@ def main()-> None:
     # Access specific item in list
     print("Print 3rd item:", roster[2])
     print("Print last item:", roster[-1])
-    print("Print first item using last:",roster[-1*len(roster)])
-
+    print("Print first item using last:", roster[-1 * len(roster)])
 
     # list of person's favorite things
     # The programmer must know the structure of the data to do this.
@@ -47,13 +46,16 @@ def main()-> None:
     yourFavorites = ["Barbra", "Blue", 24, "GTA"]
 
     # Access list of various things
-    print("List of various things:",end="")
-    print(f"{myFavorites[0]}'s favorite color is {myFavorites[1]}, favorite number is {myFavorites[2]}, and favorite character {myFavorites[3]}.")
-    print(f"{yourFavorites[0]}'s favorite color is {yourFavorites[1]}, favorite number is {yourFavorites[2]}, and favorite character {yourFavorites[3]}.")
+    print("List of various things:", end="")
+    print(
+        f"{myFavorites[0]}'s favorite color is {myFavorites[1]}, favorite number is {myFavorites[2]}, and favorite character {myFavorites[3]}.")
+    print(
+        f"{yourFavorites[0]}'s favorite color is {yourFavorites[1]}, favorite number is {yourFavorites[2]}, and favorite character {yourFavorites[3]}.")
 
     # Concatinate 2 list
     allFavorites = myFavorites + yourFavorites
     print(allFavorites)
+
 
 if __name__ == "__main__":
     main()

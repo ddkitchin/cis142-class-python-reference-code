@@ -10,7 +10,9 @@ process salaries until salary 0.0 or less is entered.
 
 print average salary
 '''
-def main()-> None:
+
+
+def main() -> None:
     total = 0.0
     count = 0
 
@@ -26,7 +28,8 @@ def main()-> None:
     if count == 0:
         print("The average salary is 0")
     else:
-        print(f'The average salary is {total/count:.2f}')
+        print(f'The average salary is {total / count:.2f}')
+
 
 if __name__ == "__main__":
     main()

@@ -1,6 +1,6 @@
 # @copyright Deborah Kitchin
 
-def main()-> None:
+def main() -> None:
     # string literal between the ""
     print("Coke Selected")
 
@@ -12,6 +12,7 @@ def main()-> None:
 
     totalPrice = price + tax
     print(f'Total = {totalPrice:.2f}')
+
 
 if __name__ == "__main__":
     main()

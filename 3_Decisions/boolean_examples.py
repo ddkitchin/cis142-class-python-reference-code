@@ -1,6 +1,6 @@
 #@ copyright Deborah Kitchin
 
-def main()-> None:
+def main() -> None:
     # boolean statement and boolean statement
     grade = int(input("Enter grade: "))
     if (grade > 79) and (grade < 90):
@@ -18,10 +18,11 @@ def main()-> None:
 
     # not boolean statement
     done = input("Enter yes when done playing: ")
-    if not(done == "yes"):
+    if not (done == "yes"):
         print("Keep playing")
     else:
         print("Goodbye")
+
 
 if __name__ == "__main__":
     main()

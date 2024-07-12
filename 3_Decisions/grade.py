@@ -1,6 +1,6 @@
 #@copyright Deborah Kitchin
 
-def main()-> None:
+def main() -> None:
     #set real variable score to the user input
     score = float(input("Enter score: "))
 
@@ -8,6 +8,7 @@ def main()-> None:
         print("You passed")
     else:
         print("You failed")
+
 
 if __name__ == "__main__":
     main()

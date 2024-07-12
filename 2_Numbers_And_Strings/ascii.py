@@ -1,6 +1,6 @@
 #@copyright Deborah Kitchin
 
-def main()-> None:
+def main() -> None:
     #Set variable character to a space.
     character = " "
     #Keep going while the variable chacters is not an empty string.
@@ -19,6 +19,7 @@ def main()-> None:
         # character ... not the end of the string.
         print(f'The character value of {str(asciiValue)} is \'{chr(asciiValue)}\'')
         asciiValue = int(input("Enter an ascii value "))
+
 
 if __name__ == "__main__":
     main()

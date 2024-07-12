@@ -6,36 +6,39 @@
 # Import the split function from the regular expression module.
 from re import split
 
-def main()->None :
-   # Read the word list and the document.
-   correctlySpelledWords = readWords("words.txt")
-   documentWords = readWords("alice30.txt")
 
-   # Print all words that are in the document but not the word list.
-   misspellings = documentWords.difference(correctlySpelledWords)
-   for word in sorted(misspellings) :
-      print(word)
-   
+def main() -> None:
+    # Read the word list and the document.
+    correctlySpelledWords = readWords("words.txt")
+    documentWords = readWords("alice30.txt")
+
+    # Print all words that are in the document but not the word list.
+    misspellings = documentWords.difference(correctlySpelledWords)
+    for word in sorted(misspellings):
+        print(word)
+
+
 ## Reads all words from a file.
 #  @param filename the name of the file
 #  @return a set with all lowercased words in the file. Here, a word is a 
 #  sequence of upper- and lowercase letters
 #   
-def readWords(filename:str) ->set:
-   wordSet = set()
-   inputFile = open(filename, "r")
-   
-   for line in inputFile :
-      line = line.strip()
-      # Use any character other than a-z or A-Z as word delimiters. The part inside [] is a regular expression.
-      parts = split("[^a-zA-Z]+", line)
-      for word in parts :
-         if len(word) > 0 :
-            wordSet.add(word.lower())
-            
-   inputFile.close()
-   return wordSet
-   
+def readWords(filename: str) -> set:
+    wordSet = set()
+    inputFile = open(filename, "r")
+
+    for line in inputFile:
+        line = line.strip()
+        # Use any character other than a-z or A-Z as word delimiters. The part inside [] is a regular expression.
+        parts = split("[^a-zA-Z]+", line)
+        for word in parts:
+            if len(word) > 0:
+                wordSet.add(word.lower())
+
+    inputFile.close()
+    return wordSet
+
+
 # Start the program.
 if __name__ == "__main__":
-   main()
+    main()

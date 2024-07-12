@@ -1,52 +1,52 @@
 # @copyright Deborah Kitchin
 class Animal:
 
-    def __init__(self, sound:str="Unknown", food:str="Unknown", movement:str="run")->None:
+    def __init__(self, sound: str = "Unknown", food: str = "Unknown", movement: str = "run") -> None:
         self._sound = sound
         self._food = food
         self._movement = movement
 
-    def __repr__(self)->str:
+    def __repr__(self) -> str:
         return f'Animal [{self.__class__.__name__},{self._sound},{self._food},{self._movement}]'
 
-    def speak(self)->None:
+    def speak(self) -> None:
         print(self._sound, end=" ")
 
-    def eat(self)->None:
+    def eat(self) -> None:
         print(self._food, end=" ")
 
-    def move(self)->None:
+    def move(self) -> None:
         print(self._movement, end=" ")
 
 
 class Dog(Animal):
 
-    def __init__(self)->None:
+    def __init__(self) -> None:
         super().__init__("ruff", "dog food")
 
-    def goOnWalk(self)->None:
+    def goOnWalk(self) -> None:
         print("walk, walk, walk")
 
 
 class Wolf(Animal):
 
-    def __init__(self)->None:
+    def __init__(self) -> None:
         super().__init__("grrr", "squirrels")
 
-    def hunt(self)->None:
+    def hunt(self) -> None:
         print("grrr, run, catch, kill")
 
 
 class Eagle(Animal):
 
-    def __init__(self)->None:
+    def __init__(self) -> None:
         super().__init__("squeal", "rabbits", "fly")
 
-    def hunt(self)->None:
+    def hunt(self) -> None:
         print("squeal, fly, claw, carry, kill")
 
 
-def showMe(animal:Animal)->None:
+def showMe(animal: Animal) -> None:
     print(animal, end=": ")
     print()
     print("\tcalling speak=", end="")
@@ -60,7 +60,7 @@ def showMe(animal:Animal)->None:
     # animal.goOnWalk() # wrong only dogs go on walks
 
 
-def main()->None:
+def main() -> None:
     print("*****Init")
     object1 = Animal()  # take defaults
     object2 = Animal('meow', 'mouse', 'prowl')  # specify attributes
@@ -128,6 +128,7 @@ def main()->None:
     for animal in zoo:
         showMe(animal)
         print()
+
 
 if __name__ == "__main__":
     main()

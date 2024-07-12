@@ -1,10 +1,10 @@
 # @copyright Deborah Kitchin
-def main()-> None:
+def main() -> None:
     privacy = getPrivacy()
     print(privacy)
 
 
-def validPrivacy(privacy:str)->bool:
+def validPrivacy(privacy: str) -> bool:
     # @return True if Y or N were selected otherwise False
 
     if len(privacy) != 0 and (privacy[0].upper() == "Y" or privacy[0].upper() == "N"):
@@ -14,7 +14,7 @@ def validPrivacy(privacy:str)->bool:
         return False
 
 
-def getPrivacy()-> str:
+def getPrivacy() -> str:
     # @return validated Public or Private visibility.
 
     privacy = input("Do you want your profile visible to others Y or N? ")
@@ -25,6 +25,7 @@ def getPrivacy()-> str:
         return "Private"
     else:
         return "Public"
+
 
 if __name__ == "__main__":
     main()

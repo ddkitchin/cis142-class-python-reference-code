@@ -3,6 +3,7 @@
 
 from Character import Character
 
+
 def main() -> None:
     #Constants
     NAME = "Master Chief"
@@ -43,7 +44,8 @@ def main() -> None:
     print(f'getHealth() after adjustment of 1 {c.getHealth()}. Verify this is what you programmed.')
     print()
     # show magic
-    print(f'getMagic() is set by game designer within the constructor {c.getMagic()}. Verify it is set the way you programmed.')
+    print(
+        f'getMagic() is set by game designer within the constructor {c.getMagic()}. Verify it is set the way you programmed.')
     print()
 
     # Verify class attributes have correct name with _ before the name.
@@ -51,6 +53,7 @@ def main() -> None:
     assert c._strength == c.getStrength(), f'c._stength not found. Name attribute must be named _strength'
     assert c._health == c.getHealth(), f'c._health not found. Name attribute must be named _health'
     assert c._magic == c.getMagic(), f'c._magic not found. Name attribute must be named _magic'
+
 
 if __name__ == "__main__":
     main()

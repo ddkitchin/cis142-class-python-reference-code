@@ -2,8 +2,9 @@
 
 from random import randint
 
-def main()-> None:
-    number = randint(1,10)
+
+def main() -> None:
+    number = randint(1, 10)
 
     # print(number) #Comment after testing done
 
@@ -19,6 +20,7 @@ def main()-> None:
             print('The number is lower')
         else:
             print(f'You guessed the number {guess} in {count} tries.')
+
 
 if __name__ == "__main__":
     main()

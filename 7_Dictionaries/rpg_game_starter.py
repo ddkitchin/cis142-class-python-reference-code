@@ -1,39 +1,38 @@
-
 #*********** Global Variables **********
-inventory = [] #an inventory, which is initially empty
-currentRoom = 1 #start the player in room 1
+inventory = []  #an inventory, which is initially empty
+currentRoom = 1  #start the player in room 1
 #a dictionary linking a room to other room positions
 rooms = {
 
-            1 : {  "name"  : "Hall" ,
-                   "east"  : 2,
-                   "south" : 3}  ,
+    1: {"name": "Hall",
+        "east": 2,
+        "south": 3},
 
-            2 : {  "name"  : "Bedroom" ,
-                   "west"  : 1,
-                   "south" : 4,
-                   "item"  : "sword" }  ,            
+    2: {"name": "Bedroom",
+        "west": 1,
+        "south": 4,
+        "item": "sword"},
 
-            3 : {  "name"  : "Kitchen" ,
-                   "north" : 1 }  ,
+    3: {"name": "Kitchen",
+        "north": 1},
 
-            4 : {  "name"  : "Bathroom" ,
-                   "north" : 2 } 
+    4: {"name": "Bathroom",
+        "north": 2}
 
-         }
+}
 
-def main()->None:
-    
+
+def main() -> None:
     showInstructions()
-    
+
     global currentRoom
     global inventory
-    
+
     # Game loop - loop infinitely 
     while True:
-    
+
         showStatus()
-    
+
         '''
         Get the player's next 'move'. 
         .split() breaks it up into an list array.
@@ -47,17 +46,17 @@ def main()->None:
         #if they type 'go' first
         if move[0] == "go":
             goToRoom(move)
-        
+
         #if they type 'get' first
-        if move[0] == "get" :
+        if move[0] == "get":
             processInventory(move)
-            
+
         #if they type 'menu' first
-        if move[0] == "menu" :
+        if move[0] == "menu":
             showInstructions()
 
-def showInstructions()->None:
-    
+
+def showInstructions() -> None:
     # comment
     print("RPG Game")
     print("========")
@@ -66,8 +65,8 @@ def showInstructions()->None:
     print("'get [item]'")
     print("'menu'")
 
-def showStatus()->None:
-    
+
+def showStatus() -> None:
     global currentRoom
     global inventory
 
@@ -75,7 +74,7 @@ def showStatus()->None:
     print("---------------------------")
 
     print(f'You are in the "{rooms[currentRoom]["name"]}"')
-    
+
     #print the current inventory
     print(f'Inventory : {str(inventory)}')
     #print an item if there is one
@@ -83,9 +82,9 @@ def showStatus()->None:
         print(f'You see a {rooms[currentRoom]["item"]}')
 
     print("---------------------------")
-    
-def goToRoom(move)->None:
-    
+
+
+def goToRoom(move) -> None:
     global currentRoom
 
     # check that a direction is specified
@@ -97,13 +96,13 @@ def goToRoom(move)->None:
         currentRoom = rooms[currentRoom][move[1]]
     #there is no door (link) to the new room
     else:
-        print("You can't go that way!") 
-        
-def processInventory(move)->None:
+        print("You can't go that way!")
 
+
+def processInventory(move) -> None:
     global currentRoom
     global inventory
-    
+
     # check that an item is specified
     if len(move) == 1:
         print(f"Please indicate a direction")
@@ -118,7 +117,8 @@ def processInventory(move)->None:
     #otherwise, if the item isn't there to get
     else:
         #tell them they can't get it
-        print(f"Can't get {move[1]}!")    
+        print(f"Can't get {move[1]}!")
+
 
 if __name__ == "__main__":
     main()

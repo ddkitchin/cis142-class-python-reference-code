@@ -3,21 +3,21 @@ from random import randint
 
 class Hand():
 
-    def __init__()->None:
+    def __init__() -> None:
         # Set name and power to empty string if no parameter is passed using the parameter in the line above.
         # Set class name to parameter name and class power to parameter power.
         # Set wins and ties ot 0.
         print("init")  # remove this when you fix the function.
 
-    def getName()->str:
+    def getName() -> str:
         # return name
         print('getName')  # remove this when you fix the function.
 
-    def getScore()->str:
+    def getScore() -> str:
         # return the formatted score wth wins and ties.
         print('getScore')  # remove this when you fix the function.
 
-    def winner()->None:
+    def winner() -> None:
         # add 1 to wins
         print('winner')  # remove this when you fix the function.
 
@@ -25,51 +25,51 @@ class Hand():
         # add 1 to losses
         print('loser')  # remove this when you fix the function.
 
-    def tie()->None:
+    def tie() -> None:
         # add 1 to ties
         print('tie')  # remove this when you fix the function.
 
-    def __eq__()->bool:
+    def __eq__() -> bool:
         # check if two objects in the class are the same.
         print('equal')  # remove this when you fix the function.
 
-    def __repr__()->str:
+    def __repr__() -> str:
         # Print the fromatted class name and power.
         print('repr')  # remove this when you fix the function.
 
 
 class Rock(Hand):
 
-    def __init__()->None:
+    def __init__() -> None:
         # set name to Rock and power to breaks
         # call the Hand class init
         print('init')  # remove this when you fix the function.
 
-    def __gt__()->bool:
+    def __gt__() -> bool:
         # check if self wins against other
         print('gt')  # remove this when you fix the function.
 
 
 class Paper(Hand):
 
-    def __init__()->None:
+    def __init__() -> None:
         # set name to Paper and power to covers
         # call the Hand class init
         print('init')  # remove this when you fix the function.
 
-    def __gt__()->bool:
+    def __gt__() -> bool:
         # check if self wins against other
         print('gt')  # remove this when you fix the function.
 
 
 class Scissors(Hand):
 
-    def __init__()->None:
+    def __init__() -> None:
         # set name to Scissors and power to cut
         # call the Hand class init
         print('init')  # remove this when you fix the function.
 
-    def __gt__()->bool:
+    def __gt__() -> bool:
         # check if self wins against other
         print('gt')  # remove this when you fix the function.
 
@@ -78,8 +78,7 @@ def main():
     runGame()
 
 
-def runGame()->None:
-
+def runGame() -> None:
     # You can use this algorithm to create your program. If you have another algorithm that you want to use
     # that is fine, as long as the results are correct and the output matches the requirements.
 
@@ -103,6 +102,7 @@ def runGame()->None:
     # for each hand in hands
     #    print the hand score
     print('runGame')
+
 
 if __name__ == "__main__":
     main()

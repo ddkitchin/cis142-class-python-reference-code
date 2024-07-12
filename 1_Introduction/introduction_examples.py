@@ -1,6 +1,6 @@
 #@copyright Deborah Kitchin
 
-def main()-> None: # Include in all programs. Defines the function main. We will learn more about this later.
+def main() -> None:  # Include in all programs. Defines the function main. We will learn more about this later.
     # Hello World
     print("Hello World")
 
@@ -23,12 +23,14 @@ def main()-> None: # Include in all programs. Defines the function main. We will
     affiliation = "Monty Python"
 
     # \n will print a blank line after the sentence.
-    print(f"Hello, {firstName} {lastName}. You are {age}. You are a {profession}. You were a member of {affiliation}.\n")
+    print(
+        f"Hello, {firstName} {lastName}. You are {age}. You are a {profession}. You were a member of {affiliation}.\n")
 
     # Calculated values
     print(f"{firstName} is {age - myAge} older than {myName}")
 
+
 # This decision (if statement) checks to see if the program is being run from this
 # program or referenced from another program. We will learn more about this later.
-if __name__ == "__main__": # Include in all programs. Checks to see if running from this program.
-    main() # Include in  all programs. Calls main
+if __name__ == "__main__":  # Include in all programs. Checks to see if running from this program.
+    main()  # Include in  all programs. Calls main

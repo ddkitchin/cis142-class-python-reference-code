@@ -1,6 +1,6 @@
 #@copyright Deborah Kitchin
 
-def main()-> None:
+def main() -> None:
     roster = ["Nathan", "Nancy", "Amber", "Aricke", "Dylan", "Jeffery", "AJ"]
 
     # Add item to end of list
@@ -57,10 +57,11 @@ def main()-> None:
 
     # Swapping. You have to hold a field so you don't
     # write over it.
-    hold=roster[-1]
-    roster[-1]=roster[1]
-    roster[1]=hold
+    hold = roster[-1]
+    roster[-1] = roster[1]
+    roster[1] = hold
     print(roster)
+
 
 if __name__ == "__main__":
     main()

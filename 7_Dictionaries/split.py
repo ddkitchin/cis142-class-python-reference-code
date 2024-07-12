@@ -1,6 +1,6 @@
 # @copyright Deborah Kitchin
 
-def main()->None:
+def main() -> None:
     # How to convert a string of values to a list.
 
     #1 enter values with space between
@@ -17,6 +17,7 @@ def main()->None:
 
     for word in words:
         print(word)
+
 
 if __name__ == "__main__":
     main()

@@ -9,18 +9,22 @@ limit, in this case MAX_NUMBERS, stops at 4 not 5.
 The randint function(0,MAX_NUMBERS), stops at 5.'''
 
 from random import *
+
 MAX_NUMBERS = 5
-def main()-> None:
+
+
+def main() -> None:
     print("Random Reals")
-    for i in range (MAX_NUMBERS):
-        print("Iteration=",i,end="")
+    for i in range(MAX_NUMBERS):
+        print("Iteration=", i, end="")
         randomValue = random()
-        print(" Random Value =",randomValue)
+        print(" Random Value =", randomValue)
     print("Random Integers")
-    for i in range (MAX_NUMBERS):
-        print("Iteration=",i,end="")
-        randomValue = randint(0,MAX_NUMBERS)
-        print(" Random Value =",randomValue)
+    for i in range(MAX_NUMBERS):
+        print("Iteration=", i, end="")
+        randomValue = randint(0, MAX_NUMBERS)
+        print(" Random Value =", randomValue)
+
 
 if __name__ == "__main__":
     main()

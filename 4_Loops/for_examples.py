@@ -2,7 +2,8 @@
 
 from random import randint
 
-def main()-> None:
+
+def main() -> None:
     # for loop that goes through each character in a string.
     name = "Debbie"
     for letter in name:
@@ -23,6 +24,7 @@ def main()-> None:
     # for loop that prints evens from 0-50
     for x in range(0, 51, 2):
         print(x)
+
 
 if __name__ == "__main__":
     main()

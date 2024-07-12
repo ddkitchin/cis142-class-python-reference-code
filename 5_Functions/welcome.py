@@ -6,21 +6,25 @@ them with the name; otherwise it will greet them with
 a generic welcome.
     
 '''
-def main()-> None:
+
+
+def main() -> None:
     print("in main")
     displayWelcome()
     ''' what happens when name is not entered? '''
     displayWelcome(input("Enter name: "))
 
-def displayWelcome(name:str="")-> None:
+
+def displayWelcome(name: str = "") -> None:
     if (len(name) == 0):
-        print(f"W",end="")
+        print(f"W", end="")
     else:
-        print(f'{name}, w',end="")
+        print(f'{name}, w', end="")
 
     print(f"elcome to War. In this game, you will")
     print(f"compete against the computer. The winner is")
     print(f"the higher card.")
+
 
 if __name__ == "__main__":
     main()
