@@ -105,7 +105,7 @@ def processInventory(move) -> None:
 
     # check that an item is specified
     if len(move) == 1:
-        print(f"Please indicate a direction")
+        print(f"Please indicate a itemget ")
     #if the room contains an item, and the item is the one they want to get
     elif "item" in rooms[currentRoom] and move[1] == rooms[currentRoom]["item"]:
         #add the item to their inventory
