@@ -22,7 +22,7 @@ class ChoiceQuestion(Question):
       super().__init__()
       self._choices = []
 
-   def addChoice(self, choice:str, correct:str)->None :
+   def addChoice(self, choice:str, correct:bool)->None :
       self._choices.append(choice)
       if correct :
          # Convert len(choices) to string.

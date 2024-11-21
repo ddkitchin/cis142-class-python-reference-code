@@ -20,9 +20,9 @@ def main() -> None:
     printInfo(v)
 
 
-def printInfo(car: Car) -> None:  #dynamic lookup of objects of type Car or Vehicle will work.
+def printInfo(v: Vehicle) -> None:  #dynamic lookup of objects of type Car or Vehicle will work.
     print("===car attibutes===")
-    print(car.getDescription())
+    print(v.getDescription())
 
 
 if __name__ == "__main__":

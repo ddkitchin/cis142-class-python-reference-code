@@ -18,7 +18,7 @@ class Car(Vehicle):
         self._plateNumber = "**None**"
         super().__init__(4)
         
-    def setLicensePlateNumber(self,plateNumber:int)->None:
+    def setLicensePlateNumber(self,plateNumber:str)->None:
         self._plateNumber = plateNumber
         
     def getDescription(self)->str:
