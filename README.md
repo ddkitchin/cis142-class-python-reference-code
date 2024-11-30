@@ -1,7 +1,7 @@
 # cis142 Class Python Reference Code
  Example code used in lectures.
 
-Starter Stub [starter_sub.py](starter_stub.py)
+Starter Stub [starter_stub.py](starter_stub.py)
 
 [1 Introduction](1_Introduction)  
 [2 Numbers and Strings](2_Numbers_And_Strings)   
