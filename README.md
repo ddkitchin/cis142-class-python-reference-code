@@ -1,4 +1,4 @@
-# cis142 Class Python Reference Code
+# CS 134 Class Python Reference Code
  Example code used in lectures.
 
 Starter Stub [starter_sub.py](starter_stub.py)
